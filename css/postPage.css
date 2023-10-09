@@ -1,0 +1,87 @@
+body {
+  background-color: #909e84;
+}
+/* nav bar  */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.button-navbar-item {
+  background-color: #909e84;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button-navbar-item:hover {
+  background-color: #7c8a72;
+  text-decoration: none;
+}
+/* form 
+form first hidden */
+.hidden {
+  display: none;
+}
+
+#formContainer {
+  margin-top: 20px;
+  border: 2px solid #000000;
+  padding: 20px;
+  max-width: 600px; /* or whatever width you prefer */
+  margin: 0 auto; /* center the form horizontally */
+  background-color: #677e5a;
+}
+/* card styling */
+.card {
+  border: 1px solid black;
+  padding: 2px;
+  /* margin: 10px;  */
+  /* Added some margin for spacing between cards */
+  width: 300px;
+  box-sizing: border-box; /* To ensure padding and border are included in the width */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #7c8a72;
+}
+
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* equal spacing around cards */
+  justify-content: space-around;
+}
+/* card styling ends */
+
+#showFormBtn {
+  background-color: rgb(21, 79, 214);
+  display: block; /* ensure it's block-level */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* message on page  */
+#instruction {
+  margin-top: 20px;
+  font-size: 20px;
+}

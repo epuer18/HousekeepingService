@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/postPage.css">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><button onclick="location.href='index.html'" class="button-navbar-item">Home</button>
+            </li>
+            <li class="nav-item"><button onclick="location.href='#'" class="button-navbar-item">Explore
+                    Services</button></li>
+        </ul>
+    </nav>
+    <!-- /Navbar -->
+    <h1> Post your service! </h1>
+    <p id="instruction">Complete the form below and let potential clients know when you're available to work.</p>
+    <button id="showFormBtn" class="btn btn-primary">Form</button>
+    <!-- form -->
+    <div id="formContainer" class="hidden mt-5">
+
+
+        <div class="mb-3">
+            <label for="userName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="userPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="userPhone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-3">
+            <label for="workLocation" class="form-label">Location Open To Work</label>
+            <input type="text" class="form-control" id="workLocation" placeholder="Enter work locations">
+        </div>
+        <div class="mb-3">
+            <label for="dayAvailable" class="form-label">Day Available</label>
+            <input type="date" class="form-control" id="dayAvailable">
+        </div>
+        <div class="mb-3">
+            <label for="timeAvailable" class="form-label">Time Available</label>
+            <input type="time" class="form-control" id="timeAvailable">
+        </div>
+        <div class="mb-3">
+            <label for="rateHour" class="form-label">Rate Per Hour ($)</label>
+            <input type="number" class="form-control" id="rateHour" placeholder="Enter rate per hour">
+        </div>
+        <div class="mb-3">
+            <label for="cleaningServices" class="form-label">Cleaning Services</label>
+            <textarea class="form-control" id="cleaningServices" rows="3"
+                placeholder="Describe your cleaning services"></textarea>
+        </div>
+        <button id="submitBtn" class="btn btn-success">Done</button>
+    </div>
+    <!-- /form -->
+    <div id="cardsContainer" class="mt-5"></div>
+
+    <!-- connect with JS -->
+    <script src="scripts/postPage.js"></script>
+</body>
+
+</html>
