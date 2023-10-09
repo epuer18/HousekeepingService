@@ -1,0 +1,27 @@
+{
+    "userName": "Best Cleaning", 
+    "userPhone":"(617) 223-4456", 
+    "workLocation": "Boston Greater Area",
+    "dayAvailable": "Weekdays",
+    "timeAvailable":"9:00am to 5:00pm",
+    "rateHour": "$60", 
+    "cleaningServices" : "Carpet, tile, floors, bathroom, appliances, kitchen"
+}
+{
+    "userName": "Get Rid of your Mice LLC", 
+    "userPhone":"(415) 617-8895", 
+    "workLocation": "San Francisco",
+    "dayAvailable": "M-W-R",
+    "timeAvailable":"4:00pm onwards",
+    "rateHour": "$150", 
+    "cleaningServices" : "fumigation services, kitchen cleaning, applicances"
+}
+{
+    "userName": "Pet cleaning Inc", 
+    "userPhone":"(415) 758-9901", 
+    "workLocation": "Sillicon Valley Area",
+    "dayAvailable": "Sat-Sun",
+    "timeAvailable":"all day",
+    "rateHour": "$75", 
+    "cleaningServices" : "pet odors, living rooms, pet-friendly"
+}
