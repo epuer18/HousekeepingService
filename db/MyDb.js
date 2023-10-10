@@ -1,10 +1,11 @@
 import { MongoClient } from "mongodb";
 
+// Make a module for our database
 function MyDB() {
-  const uri = "mongodb+srv://puertae:<password>@cluster0.u0h8npt.mongodb.net/?retryWrites=true&w=majority";
-  const myDB = {};
 
-  const prompts = [1, 2, 3, 4];
+  // connect to MongoDB  
+  const uri = "mongodb+srv://puertae:@cluster0.u0h8npt.mongodb.net/?retryWrites=true&w=majority";
+  const myDB = {};
 
   const connect = () => {
     const client = new MongoClient(uri);
@@ -14,22 +15,21 @@ function MyDB() {
     return { client, db };
   };
 
-  myDB.getPrompts = async ({ query = {}, MaxElements = 20 } = {}) => {
+
+  myDB.getServices = async ({ query = {}, MaxElements = 20 } = {}) => {
     const { client, db } = connect();
 
-    //const promptsCollection = db.collection("prompts");
-
+    const servicesCollection = db.collection("services");
     try {
       await client.connect();
-    // Send a ping to confirm a successful connection
-      await client.db("admin").command({ ping: 1 });
-      console.log("Pinged your deployment. You successfully connected to MongoDB!");
-      //return await promptsCollection.find(query).limit(MaxElements).toArray();
+      return await servicesCollection.find(query).limit(MaxElements).toArray();
+
     } finally {
       console.log("db closing connection");
       client.close();
     }
   };
+
 
   return myDB;
 }

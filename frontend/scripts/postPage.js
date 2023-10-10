@@ -1,3 +1,5 @@
+//import mongo
+
 // Connect an event listener to the button "showFormBtn"
 // When this button is clicked, the provided function will be executed
 document.getElementById("showFormBtn").addEventListener("click", function () {
@@ -37,4 +39,6 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   // how? set its CSS display property to "none"
 
   document.getElementById("formContainer").style.display = "none";
+
+  // myBD.wirte(obj)
 });

@@ -4,14 +4,15 @@ import {myDB} from "../db/MyDb.js";
 const router = express.Router();
 
 // code from class, TODO: rework into usable code
-router.get("/cinco", async (req, res) => {
-  console.log("should return prompts");
+router.get("/services", async (req, res) => {
 
-  console.log("before");
-  const prompts = await myDB.getPrompts();
-  console.log("after");
-  //res.json(prompts);
+  const services = await myDB.getServices();
+  res.json(services);
 });
+
+//router.post("/", async (req, res) => {
+    // send data to the server 
+//})
 
 // Default export
 export default router;

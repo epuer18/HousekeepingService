@@ -1,0 +1,290 @@
+[{
+    "userName": "Best Cleaning", 
+    "userPhone":"(617) 223-4456", 
+    "workLocation": "Boston Greater Area",
+    "dayAvailable": "Weekdays",
+    "timeAvailable":"9:00am to 5:00pm",
+    "rateHour": "$60", 
+    "cleaningServices" : "Carpet, tile, floors, bathroom, appliances, kitchen", 
+    "rating":2
+},
+{
+    "userName": "Get Rid of your Mice LLC", 
+    "userPhone":"(415) 617-8895", 
+    "workLocation": "San Francisco",
+    "dayAvailable": "M-W-R",
+    "timeAvailable":"4:00pm onwards",
+    "rateHour": "$150", 
+    "cleaningServices" : "fumigation services, kitchen cleaning, applicances",
+    "rating": 4
+},
+{
+    "userName": "Pet cleaning Inc", 
+    "userPhone":"(415) 758-9901", 
+    "workLocation": "Sillicon Valley Area",
+    "dayAvailable": "Sat-Sun",
+    "timeAvailable":"all day",
+    "rateHour": "$75", 
+    "cleaningServices" : "pet odors, living rooms, pet-friendly",
+    "rating": 3
+}, 
+{ 
+    "userName": "CleanCo",
+    "userPhone": "(555) 123-4567",
+    "workLocation": "Greater Boston Area",
+    "dayAvailable": "10-15-2023",
+    "timeAvailable": "09:00",
+    "rateHour": 25,
+    "cleaningServices": "Carpet Cleaning, Pet Odor Removal",
+    "rating": 4.8
+},
+{
+    "userName": "Sparkling Homes",
+    "userPhone": "(555) 987-6543",
+    "workLocation": "Cambridge, MA",
+    "dayAvailable": "10-16-2023",
+    "timeAvailable": "14:30",
+    "rateHour": 30,
+    "cleaningServices": "Deep Cleaning, Window Washing",
+    "rating": 4.9
+},
+{
+    "userName": "CleanTeam",
+    "userPhone": "(555) 555-5555",
+    "workLocation": "Brookline, MA",
+    "dayAvailable": "10-17-2023",
+    "timeAvailable": "10:00",
+    "rateHour": 28,
+    "cleaningServices": "Housekeeping, Floor Waxing",
+    "rating": 4.7
+},
+{
+    "userName": "DustBusters",
+    "userPhone": "(555) 789-1234",
+    "workLocation": "Newton, MA",
+    "dayAvailable": "10-18-2023",
+    "timeAvailable": "12:45",
+    "rateHour": 27,
+    "cleaningServices": "Dusting, Bathroom Cleaning",
+    "rating": 4.6
+},
+{
+    "userName": "Spotless Cleaners",
+    "userPhone": "(555) 432-8765",
+    "workLocation": "Somerville, MA",
+    "dayAvailable": "10-19-2023",
+    "timeAvailable": "11:15",
+    "rateHour": 32,
+    "cleaningServices": "Carpet Cleaning, Upholstery Cleaning",
+    "rating": 4.9
+},
+{
+    "userName": "Sunshine Maids",
+    "userPhone": "(555) 876-5432",
+    "workLocation": "Quincy, MA",
+    "dayAvailable": "10-20-2023",
+    "timeAvailable": "08:30",
+    "rateHour": 26,
+    "cleaningServices": "House Cleaning, Window Washing",
+    "rating": 4.8
+},
+{
+    "userName": "Maid in Heaven",
+    "userPhone": "(555) 234-5678",
+    "workLocation": "Waltham, MA",
+    "dayAvailable": "10-21-2023",
+    "timeAvailable": "13:00",
+    "rateHour": 29,
+    "cleaningServices": "Housekeeping, Floor Cleaning",
+    "rating": 4.7
+},
+{
+    "userName": "Clean Sweep",
+    "userPhone": "(555) 345-6789",
+    "workLocation": "Arlington, MA",
+    "dayAvailable": "10-22-2023",
+    "timeAvailable": "15:30",
+    "rateHour": 31,
+    "cleaningServices": "Carpet Cleaning, Deep Cleaning",
+    "rating": 4.9
+},
+{
+    "userName": "Elite Cleaners",
+    "userPhone": "(555) 876-1234",
+    "workLocation": "Lexington, MA",
+    "dayAvailable": "10-23-2023",
+    "timeAvailable": "09:45",
+    "rateHour": 33,
+    "cleaningServices": "House Cleaning, Pet Odor Removal",
+    "rating": 4.8
+},
+{
+    "userName": "Fresh Start Cleaning",
+    "userPhone": "(555) 567-4321",
+    "workLocation": "Malden, MA",
+    "dayAvailable": "10-24-2023",
+    "timeAvailable": "10:30",
+    "rateHour": 28,
+    "cleaningServices": "Carpet Cleaning, Window Washing",
+    "rating": 4.7
+},
+{
+    "userName": "ProClean Solutions",
+    "userPhone": "(555) 789-5678",
+    "workLocation": "Medford, MA",
+    "dayAvailable": "10-25-2023",
+    "timeAvailable": "14:15",
+    "rateHour": 30,
+    "cleaningServices": "Deep Cleaning, Floor Waxing",
+    "rating": 4.9
+},
+{
+    "userName": "Shiny Homes",
+    "userPhone": "(555) 123-9876",
+    "workLocation": "Salem, MA",
+    "dayAvailable": "10-26-2023",
+    "timeAvailable": "11:45",
+    "rateHour": 29,
+    "cleaningServices": "Housekeeping, Dusting",
+    "rating": 4.8
+},
+{
+    "userName": "CleanXpress",
+    "userPhone": "(555) 432-5678",
+    "workLocation": "Burlington, MA",
+    "dayAvailable": "10-27-2023",
+    "timeAvailable": "12:30",
+    "rateHour": 27,
+    "cleaningServices": "Carpet Cleaning, Upholstery Cleaning",
+    "rating": 4.7
+},
+{
+    "userName": "GreenClean Team",
+    "userPhone": "(555) 678-1234",
+    "workLocation": "Woburn, MA",
+    "dayAvailable": "10-28-2023",
+    "timeAvailable": "08:00",
+    "rateHour": 26,
+    "cleaningServices": "House Cleaning, Window Washing",
+    "rating": 4.6
+},
+{
+    "userName": "PureCare Cleaning",
+    "userPhone": "(555) 234-9876",
+    "workLocation": "Peabody, MA",
+    "dayAvailable": "10-29-2023",
+    "timeAvailable": "13:45",
+    "rateHour": 32,
+    "cleaningServices": "Housekeeping, Floor Cleaning",
+    "rating": 4.9
+},
+{
+    "userName": "QuickClean Services",
+    "userPhone": "(555) 789-4321",
+    "workLocation": "Lynn, MA",
+    "dayAvailable": "10-30-2023",
+    "timeAvailable": "15:15",
+    "rateHour": 30,
+    "cleaningServices": "Carpet Cleaning, Deep Cleaning",
+    "rating": 4.8
+},
+{
+    "userName": "SpotFree Solutions",
+    "userPhone": "(555) 876-2345",
+    "workLocation": "Melrose, MA",
+    "dayAvailable": "10-31-2023",
+    "timeAvailable": "10:45",
+    "rateHour": 28,
+    "cleaningServices": "House Cleaning, Pet Odor Removal",
+    "rating": 4.7
+},
+{
+    "userName": "Sunrise Cleaners",
+    "userPhone": "(555) 345-7890",
+    "workLocation": "Reading, MA",
+    "dayAvailable": "11-01-2023",
+    "timeAvailable": "09:30",
+    "rateHour": 27,
+    "cleaningServices": "Carpet Cleaning, Window Washing",
+    "rating": 4.9
+},
+{
+    "userName": "Superior Maids",
+    "userPhone": "(555) 567-8765",
+    "workLocation": "Winchester, MA",
+    "dayAvailable": "11-02-2023",
+    "timeAvailable": "14:00",
+    "rateHour": 33,
+    "cleaningServices": "Deep Cleaning, Floor Waxing",
+    "rating": 4.8
+},
+{
+    "userName": "CleanSlate",
+    "userPhone": "(555) 123-6543",
+    "workLocation": "Wakefield, MA",
+    "dayAvailable": "11-03-2023",
+    "timeAvailable": "11:30",
+    "rateHour": 29,
+    "cleaningServices": "Housekeeping, Dusting",
+    "rating": 4.7
+},
+{
+    "userName": "FreshLife Cleaning",
+    "userPhone": "(555) 432-7890",
+    "workLocation": "Beverly, MA",
+    "dayAvailable": "11-04-2023",
+    "timeAvailable": "12:15",
+    "rateHour": 30,
+    "cleaningServices": "Carpet Cleaning, Upholstery Cleaning",
+    "rating": 4.6
+},
+{
+    "userName": "CleanGenius",
+    "userPhone": "(555) 678-5678",
+    "workLocation": "Danvers, MA",
+    "dayAvailable": "11-05-2023",
+    "timeAvailable": "08:45",
+    "rateHour": 28,
+    "cleaningServices": "House Cleaning, Window Washing",
+    "rating": 4.9
+},
+{
+    "userName": "Pristine Clean",
+    "userPhone": "(555) 234-6543",
+    "workLocation": "Andover, MA",
+    "dayAvailable": "11-06-2023",
+    "timeAvailable": "13:30",
+    "rateHour": 26,
+    "cleaningServices": "Housekeeping, Floor Cleaning",
+    "rating": 4.8
+},
+{
+    "userName": "TopNotch Cleaners",
+    "userPhone": "(555) 789-8765",
+    "workLocation": "Saugus, MA",
+    "dayAvailable": "11-07-2023",
+    "timeAvailable": "15:00",
+    "rateHour": 31,
+    "cleaningServices": "Carpet Cleaning, Deep Cleaning",
+    "rating": 4.9
+},
+{
+    "userName": "Crystal Clear Cleaning",
+    "userPhone": "(555) 876-6543",
+    "workLocation": "Lynnfield, MA",
+    "dayAvailable": "11-08-2023",
+    "timeAvailable": "10:15",
+    "rateHour": 29,
+    "cleaningServices": "House Cleaning, Pet Odor Removal",
+    "rating": 4.8
+},
+{
+    "userName": "BlueSky Cleaners",
+    "userPhone": "(555) 345-2345",
+    "workLocation": "North Reading, MA",
+    "dayAvailable": "11-09-2023",
+    "timeAvailable": "09:00",
+    "rateHour": 27,
+    "cleaningServices": "Carpet Cleaning, Window Washing",
+    "rating": 4.7
+}]
