@@ -4,7 +4,7 @@ import { MongoClient } from "mongodb";
 function MyDB() {
 
   // connect to MongoDB  
-  const uri = "mongodb+srv://puertae:@cluster0.u0h8npt.mongodb.net/?retryWrites=true&w=majority";
+  const uri = "mongodb+srv://puertae:abcd@cluster0.u0h8npt.mongodb.net/?retryWrites=true&w=majority";
   const myDB = {};
 
   const connect = () => {
@@ -16,13 +16,13 @@ function MyDB() {
   };
 
 
-  myDB.getServices = async ({ query = {}, MaxElements = 20 } = {}) => {
+  myDB.getServices = async ({ query = {}, MaxElements = 20, orderBy = "rating" } = {}) => {
     const { client, db } = connect();
 
     const servicesCollection = db.collection("services");
     try {
       await client.connect();
-      return await servicesCollection.find(query).limit(MaxElements).toArray();
+      return await servicesCollection.find(query).limit(MaxElements).sort({orderBy: -1}).toArray();
 
     } finally {
       console.log("db closing connection");

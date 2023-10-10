@@ -16,12 +16,12 @@ function BookingModule(servicesID = "#cardsContainer") {
     */
 
       return ` 
-      <div class="card card-body col-md-3">
-            <h3>${service.userName} </h3>
-            <p>Phone:${service.userPhone}  </p>
-            <p>Location Open To Work At:${service.workLocation}  </p>
-            <p>Day available ($/hr): ${service.dayAvailable}  </p>
-            <p>Time Available ($/hr): ${service.timeAvailable}  </p>
+      <div class="card booking-card col-sm-12 col-md-4 col-lg-3">
+            <h3 class="card-title"><strong>${service.userName}</strong></h3>
+            <p>Phone: ${service.userPhone}  </p>
+            <p>Location Open To Work At: ${service.workLocation}  </p>
+            <p>Day available: ${service.dayAvailable}  </p>
+            <p>Time Available: ${service.timeAvailable}  </p>
             <p>Rate ($/hr): ${service.rateHour}  </p>
             <p>Cleaning Services: ${service.cleaningServices} </p>
             <p>Rating: ${service.rating}</p>
@@ -30,9 +30,9 @@ function BookingModule(servicesID = "#cardsContainer") {
     }
   
     function redraw(services) {
-      let rows =  services.map(getserviceCode);
+
       servicesElement.innerHTML = "";
-      servicesElement.innerHTML =  rows;
+      servicesElement.innerHTML =  services.map(getserviceCode).join("\n");
     }
   
     async function loadData() {
@@ -40,8 +40,7 @@ function BookingModule(servicesID = "#cardsContainer") {
       const services = await res.json();
   
   
-      // should already be max 20 but
-      me.redraw(services.slice(0, 20));
+      me.redraw(services);
     }
   
     me.redraw = redraw;
