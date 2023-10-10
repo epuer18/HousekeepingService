@@ -6,6 +6,7 @@ document.getElementById("showFormBtn").addEventListener("click", function () {
 
 // Function to format time from 24 hr  to regular time
 // when creating card, form was changing time to 24 hr
+// got help online
 function formatTime(time) {
   const [hours, minutes] = time.split(":");
   const parsedHours = parseInt(hours, 10);
