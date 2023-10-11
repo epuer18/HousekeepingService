@@ -38,8 +38,6 @@ function BookingModule(servicesID = "#cardsContainer") {
     async function loadData() {
       const res = await fetch("./api/services");
       const services = await res.json();
-  
-  
       me.redraw(services);
     }
   

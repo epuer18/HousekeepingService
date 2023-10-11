@@ -1,4 +1,3 @@
-//import mongo
 
 // Connect an event listener to the button "showFormBtn"
 // When this button is clicked, the provided function will be executed
@@ -19,6 +18,36 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   const cleaningServices = document.getElementById("cleaningServices").value;
 
   const card = document.createElement("div");
+
+  const service = {"userName": userName,
+    "userPhone": userPhone,
+    "workLocation" :workLocation ,
+    "dayAvailable": dayAvailable,
+    "timeAvailable": timeAvailable, 
+    "rateHour":rateHour, 
+    "cleaningServices": cleaningServices, 
+    "rating": 0, 
+    "n": 0}
+
+    async function postJSON(data) {
+      try {
+        const response = await fetch("./api/add", {
+          method: "POST", 
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+    
+        const result = await response.json();
+        console.log("Success:", result);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    }; 
+
+    postJSON(service);
+
   card.className = "card col-md-3 mb-4"; // Added col-md-3 and mb-4 for margin
   // what will be displayed on card
   card.innerHTML = `
@@ -39,6 +68,4 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   // how? set its CSS display property to "none"
 
   document.getElementById("formContainer").style.display = "none";
-
-  // myBD.wirte(obj)
 });
