@@ -44,8 +44,8 @@ document.getElementById("submitBtn").addEventListener("click", function () {
       } catch (error) {
         console.error("Error:", error);
       }
-    }; 
-
+    };
+    
     postJSON(service);
 
   card.className = "card col-md-3 mb-4"; // Added col-md-3 and mb-4 for margin

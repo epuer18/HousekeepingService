@@ -1,3 +1,7 @@
+.checked{
+    color: orange;
+}
+
 body {
   background-color: #909e84;
   font-family: Arial, Helvetica, sans-serif;
@@ -76,15 +80,10 @@ form first hidden */
 }
 /* card styling ends */
 
-#showFormBtn {
-  background-color: rgb(21, 79, 214);
-  display: block; /* ensure it's block-level */
-  margin-left: auto;
-  margin-right: auto;
-}
-/* message on page  */
-#instruction {
-  margin-top: 20px;
-  font-size: 20px;
-}
+
+.booking-card{
+    margin: 1rem;
+    padding: 2rem;
+  }
+
 

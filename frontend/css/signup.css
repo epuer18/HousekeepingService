@@ -1,0 +1,51 @@
+/* Setting the page's background color */
+body {
+  background-color: #909e84;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  background-color: #506346;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  /* Creates space between the "Sign Up" heading and the form */
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: rgb(
+    216,
+    212,
+    197
+  ); /* Background color of the input fields */
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #909e84;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+}
