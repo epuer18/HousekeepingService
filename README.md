@@ -10,7 +10,7 @@ Walkthrough Video:
 
 Slides: https://docs.google.com/presentation/d/1Oa3BdZ2WB9zYL-O41pdDc7k0UPlX7rSQSdthu8VpPs8/edit?usp=sharing
 
-Design Document:
+Design Document: [Click to view the design document PDF](designDoc/CS5610_Project2.pdf)
 
 Class Link: https://johnguerra.co/classes/webDevelopment_fall_2023/
 
@@ -32,7 +32,7 @@ This app allows housekeeping service providers to post their services to connect
 - Rating system:
   - user can rate thier experince with a service
 
-## Installation:
+## Installation: (come back and finish)
 
 - clone this repository to local machine
 - run npm install
