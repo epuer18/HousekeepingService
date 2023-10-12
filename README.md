@@ -1,18 +1,20 @@
 # Housekeeping Service App
 
-## Authors: Eduardo Puerta and Vicki Diaz
+## Overview
+
++ **Authors**: Eduardo Puerta and Vicki Diaz
 
 ## Project Information/ Links:
 
-public Server:
++ **Deployed page**: https://housekeeping-service.onrender.com/
 
-Walkthrough Video:
++ **Walkthrough Video**:
 
-Slides: https://docs.google.com/presentation/d/1Oa3BdZ2WB9zYL-O41pdDc7k0UPlX7rSQSdthu8VpPs8/edit?usp=sharing
++ **Slides**: https://docs.google.com/presentation/d/1Oa3BdZ2WB9zYL-O41pdDc7k0UPlX7rSQSdthu8VpPs8/edit?usp=sharing
 
-Design Document: [Click to view the design document PDF](designDoc/CS5610_Project2.pdf)
++ **Design Document**: [Click to view the design document PDF](designDoc/CS5610_Project2.pdf)
 
-Class Link: https://johnguerra.co/classes/webDevelopment_fall_2023/
++ **Class Link**: https://johnguerra.co/classes/webDevelopment_fall_2023/
 
 ## Objective:
 
@@ -32,12 +34,34 @@ This app allows housekeeping service providers to post their services to connect
 - Rating system:
   - user can rate thier experince with a service, which updates the rating in the database
 
-## Installation: (come back and finish)
+## Installation:
 
 - clone this repository to local machine
-- run npm install
 
-- missing finish steps!
+```
+git clone https://github.com/epuer18/HousekeepingService
+```
+- run `npm install`` to build packages and install dependencies
+
+```
+npm install
+```
+
+- add a .env file to the directory and make a `MONGO_URL` variable with the `uri` to connect to the right MongoDB Atlas database.
+
+    - This site was developed with a database in MongoDB Atlas, to use the same database contact the authors with your IP number so that it can be added onto the permissions. Similarly, to prevent others from overusing these resources, we share a private key at our discression.
+    - Otherwise you can create your own MongoDB Atlas project with a database named `HousekeepingApp` and two collections: `users` and `services`.
+
+```
+MONGO_URL = "mongodb+srv://<username>:<password><info_database_cluster>"
+```
+
++ finally run the application locally with `npm start`
+
+```
+npm start
+```
+
 
 ## Technologies Used:
 
@@ -51,12 +75,20 @@ This app allows housekeeping service providers to post their services to connect
 
 ## Screenshots of App
 
-Below we show some screenshots of the site's main pages. 
+Below we show some screenshots of the site's main pages, and a brief description on how to navigate. 
+
+1. First we start on a landing page that asks us to sign up. Since this project aims to demonstrate the use of MongoDB and node express to build a backend we ask that you **DO NOT** use real credentials for this step. 
 
 ![Screenshot of landing page with sign up and log in](assets/img/screenshot_landing.png)
 
+2. After logging in or signing up, you can choose to add a service entry to the database or see the available services to book them. Click on the corresponding button. 
+
 ![Screenshot of page prompting users with booking or posting optinos](assets/img/house_action.png)
 
+3. For the Posting section, open the form and fill with relevant details. 
+
 ![Screenshot of posting page, with a a form to upload services](assets/img/house_posting.png)
+
+4. For the booking section, see what services are available and make sure to call whichever you like best. Afterwards come back and add a rating so other users can see which services are good!
 
 ![Screenshot of services to be booked](assets/img/house_booking.png)
