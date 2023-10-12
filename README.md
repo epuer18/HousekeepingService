@@ -28,9 +28,10 @@ This app allows housekeeping service providers to post their services to connect
   - user is able to create a service
   - can add name, phone number, location, day and time availability, hourly rate, and what services they provide
 - Book Service:
-  - can book a service that matches their savings
+  - lets a user see a service that matches their preference and gives information to call provider
 - Rating system:
   - user can rate thier experince with a service
+  - user can update thier ratings
 
 ## Installation: (come back and finish)
 
