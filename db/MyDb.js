@@ -2,7 +2,6 @@ import { MongoClient } from "mongodb";
 import { ObjectId } from "mongodb";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt"; // to like hash the passwords
-import { async } from "abc";
 
 // Make a module for database
 function MyDB() {
