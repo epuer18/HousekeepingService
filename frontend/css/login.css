@@ -1,0 +1,54 @@
+/* Setting the page's background color */
+body {
+  background-color: #909e84;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: #506346;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+  /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9); */
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  /* Creates space between the "Log In" heading and the form */
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  background-color: rgb(
+    216,
+    212,
+    197
+  ); /* Background color of the input fields */ /* Background color of the input fields */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #909e84;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+}
