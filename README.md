@@ -79,7 +79,9 @@ Below we show some screenshots of the site's main pages, and a brief description
 
 1. First we start on a landing page that asks us to sign up. Since this project aims to demonstrate the use of MongoDB and node express to build a backend we ask that you **DO NOT** use real credentials for this step. 
 
-![Screenshot of landing page with sign up and log in](assets/img/screenshot_landing.png)
+<img width="1051" alt="Screenshot of landing page with sign up and log in" src="https://github.com/epuer18/HousekeepingService/assets/88179209/127af772-cf04-49be-a9e8-c9ce67498091">
+
+
 
 2. After logging in or signing up, you can choose to add a service entry to the database or see the available services to book them. Click on the corresponding button. 
 
