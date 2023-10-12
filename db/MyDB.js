@@ -1,36 +1,72 @@
 import { MongoClient } from "mongodb";
+import { ObjectId } from "mongodb";
+import dotenv from "dotenv";
 import bcrypt from "bcrypt"; // to like hash the passwords
+import { async } from "abc";
 
+// Make a module for database
 function MyDB() {
-  const uri =
-    "mongodb+srv://vickidiaz42:Szvc24woHj3TPKbW@cluster0.eyuhcto.mongodb.net/?retryWrites=true&w=majority";
+  // Add to set .env configurations, namely the MongoDB uri
+  dotenv.config();
+
+  // connect to MongoDB
+  const uri = process.env.MONGO_URL;
   const myDB = {};
 
-  //const prompts = [1, 2, 3, 4];
-
+  // Create a brief connection
   const connect = () => {
     const client = new MongoClient(uri);
-    console.log("client");
-    // comback change
+
+    console.log("Established Connection");
     const db = client.db("HousekeepingApp");
 
     return { client, db };
   };
 
-  // class example
-  myDB.getPrompts = async ({ query = {}, MaxElements = 20 } = {}) => {
+  // define a get Services function for this module
+  myDB.getServices = async ({
+    query = {},
+    MaxElements = 20,
+    orderBy = "_id",
+  } = {}) => {
     const { client, db } = connect();
 
-    //const promptsCollection = db.collection("prompts");
-
+    const servicesCollection = db.collection("services");
     try {
-      await client.connect();
-      // Send a ping to confirm a successful connection
-      await client.db("admin").command({ ping: 1 });
-      console.log(
-        "Pinged your deployment. You successfully connected to MongoDB!"
+      return await servicesCollection
+        .find(query)
+        .limit(MaxElements)
+        .sort({ orderBy: -1 })
+        .toArray();
+    } finally {
+      console.log("db closing connection");
+      client.close();
+    }
+  };
+
+  // define an add service function to add a single service
+  // to be used in the post page
+  myDB.addService = async (service) => {
+    const { client, db } = connect();
+
+    const servicesCollection = db.collection("services");
+    try {
+      return await servicesCollection.insertOne(service);
+    } finally {
+      console.log("db closing connection");
+      client.close();
+    }
+  };
+
+  myDB.updateRating = async (userRating) => {
+    const { client, db } = connect();
+
+    const servicesCollection = db.collection("services");
+    try {
+      return await servicesCollection.updateOne(
+        { _id: new ObjectId(userRating._id) },
+        { $set: { rating: userRating.rating, n: userRating.n } }
       );
-      //return await promptsCollection.find(query).limit(MaxElements).toArray();
     } finally {
       console.log("db closing connection");
       client.close();
@@ -43,7 +79,6 @@ function MyDB() {
     const { client, db } = connect();
     try {
       // This connects to the MongoDB database.
-      await client.connect();
       // how to do this: https://www.npmjs.com/package/bcrypt
       // Generate salt & hash password
       // Using the bcrypt library, a new "salt" is generated.
@@ -73,7 +108,6 @@ function MyDB() {
   myDB.authenticateUser = async ({ username, password }) => {
     const { client, db } = connect();
     try {
-      await client.connect();
       // searches the "users" collection in the database for a document (or user)
       // with the provided username. If found, the user document is stored in the user constant.
       const user = await db.collection("users").findOne({ username });

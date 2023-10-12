@@ -1,16 +1,15 @@
 import { MongoClient } from "mongodb";
-import {ObjectId} from "mongodb";
+import { ObjectId } from "mongodb";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt"; // to like hash the passwords
 import { async } from "abc";
-
 
 // Make a module for database
 function MyDB() {
   // Add to set .env configurations, namely the MongoDB uri
   dotenv.config();
 
-  // connect to MongoDB  
+  // connect to MongoDB
   const uri = process.env.MONGO_URL;
   const myDB = {};
 
@@ -18,20 +17,27 @@ function MyDB() {
   const connect = () => {
     const client = new MongoClient(uri);
 
-    console.log("Established Connection")
+    console.log("Established Connection");
     const db = client.db("HousekeepingApp");
 
     return { client, db };
   };
 
   // define a get Services function for this module
-  myDB.getServices = async ({ query = {}, MaxElements = 20, orderBy = "_id" } = {}) => {
+  myDB.getServices = async ({
+    query = {},
+    MaxElements = 20,
+    orderBy = "_id",
+  } = {}) => {
     const { client, db } = connect();
 
     const servicesCollection = db.collection("services");
     try {
-      return await servicesCollection.find(query).limit(MaxElements).sort({orderBy: -1}).toArray();
-
+      return await servicesCollection
+        .find(query)
+        .limit(MaxElements)
+        .sort({ orderBy: -1 })
+        .toArray();
     } finally {
       console.log("db closing connection");
       client.close();
@@ -46,28 +52,26 @@ function MyDB() {
     const servicesCollection = db.collection("services");
     try {
       return await servicesCollection.insertOne(service);
-
     } finally {
       console.log("db closing connection");
       client.close();
     }
-  }
+  };
 
   myDB.updateRating = async (userRating) => {
-    
     const { client, db } = connect();
 
     const servicesCollection = db.collection("services");
     try {
-
-      return await servicesCollection.updateOne({_id: new ObjectId(userRating._id)}, {$set:{rating: userRating.rating, n: userRating.n}});
-
+      return await servicesCollection.updateOne(
+        { _id: new ObjectId(userRating._id) },
+        { $set: { rating: userRating.rating, n: userRating.n } }
+      );
     } finally {
       console.log("db closing connection");
       client.close();
     }
-  }
-
+  };
 
   //  method called registerUser on the myDB object.
   myDB.registerUser = async ({ username, email, password }) => {
