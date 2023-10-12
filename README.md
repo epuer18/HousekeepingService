@@ -51,3 +51,13 @@ This app allows housekeeping service providers to post their services to connect
 - Express.js
 
 ## Screenshots of App
+
+Below we show some screenshots of the site's main pages. 
+
+![Screenshot of landing page with sign up and log in](assets/img/screenshot_landing.png)
+
+![Screenshot of page prompting users with booking or posting optinos](assets/img/house_action.png)
+
+![Screenshot of posting page, with a a form to upload services](assets/img/house_posting.png)
+
+![Screenshot of services to be booked](assets/img/house_booking.png)
