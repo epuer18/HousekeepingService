@@ -55,7 +55,7 @@ form first hidden */
 .card {
   border: 1px solid black;
   padding: 2px;
-  /* margin: 10px;  */
+  margin: 10px;
   /* Added some margin for spacing between cards */
   width: 300px;
   box-sizing: border-box; /* To ensure padding and border are included in the width */
@@ -65,7 +65,7 @@ form first hidden */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7c8a72;
+  background-color: white;
 }
 
 #cardsContainer {
@@ -87,4 +87,3 @@ form first hidden */
   margin-top: 20px;
   font-size: 20px;
 }
-

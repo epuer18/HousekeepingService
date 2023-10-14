@@ -45,12 +45,23 @@ function MyDB() {
 
   // define an add service function to add a single service
   // to be used in the post page
+  // myDB.addService = async (service) => {
+  //   const { client, db } = connect();
+
+  //   const servicesCollection = db.collection("services");
+  //   try {
+  //     return await servicesCollection.insertOne(service);
+  //   } finally {
+  //     console.log("db closing connection");
+  //     client.close();
+  //   }
+  // };
   myDB.addService = async (service) => {
     const { client, db } = connect();
-
     const servicesCollection = db.collection("services");
     try {
-      return await servicesCollection.insertOne(service);
+      const result = await servicesCollection.insertOne(service);
+      return result.insertedId; // return the ID of the inserted document
     } finally {
       console.log("db closing connection");
       client.close();
@@ -102,8 +113,9 @@ function MyDB() {
     }
   };
 
-  // asynchronous method called authenticateUser
+  // asynchronous method authenticateUser
   // expectes username and password
+  // use to authenticateUser
   myDB.authenticateUser = async ({ username, password }) => {
     const { client, db } = connect();
     try {
@@ -120,6 +132,24 @@ function MyDB() {
       console.error("Error authenticating user:", error);
       return { success: false, error };
     } finally {
+      client.close();
+    }
+  };
+
+  // asynchronous method deleteService
+  // user to delete service in posting and booking pages and data base
+
+  myDB.deleteService = async (serviceId) => {
+    const { client, db } = connect();
+
+    const servicesCollection = db.collection("services");
+    try {
+      const result = await servicesCollection.deleteOne({
+        _id: new ObjectId(serviceId),
+      });
+      return result;
+    } finally {
+      console.log("db closing connection");
       client.close();
     }
   };
