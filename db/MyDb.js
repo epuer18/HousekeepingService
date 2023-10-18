@@ -158,3 +158,5 @@ function MyDB() {
 }
 
 export const myDB = MyDB();
+// I really like how you organize the code like this and separated the code working with DB from the backend.js
+// it's really clear and neat this way
