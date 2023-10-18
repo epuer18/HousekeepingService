@@ -52,7 +52,7 @@ function BookingModule(servicesID = "#cardsContainer") {
                    ${rating}
             </div>
         </div>
-    `;
+    `; // Wow this is such a simple and elegant way for displaying content. Love it!
     }
 
     function updateRatings(service) {
@@ -136,4 +136,6 @@ function BookingModule(servicesID = "#cardsContainer") {
 
   
   
-  main.loadData();
+  main.loadData(); 
+
+//Overall so many inspirations on how I can use the language 
