@@ -42,6 +42,11 @@ This app allows housekeeping service providers to post their services to connect
 ```
 git clone https://github.com/epuer18/HousekeepingService
 ```
+- Navigate into the directory: (You lost a step.)
+
+```
+cd HousekeepingService
+```
 
 - run `npm install`` to build packages and install dependencies
 
